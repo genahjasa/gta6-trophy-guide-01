@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d24e2a'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23fff' font-family='Georgia,serif'%3ELL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <h1>Leonida Ledger</h1>
+    <p class="tagline">The GTA VI trophy guide &amp; tracker — every one of the 55 PlayStation 5 trophies, with a roadmap to the platinum.</p>
+    <p class="facts">55 trophies · 1 platinum, 2 gold, 6 silver, 46 bronze · 28 hidden · 0 online · about 200 hours to platinum · 1 playthrough · difficulty 4/10</p>
+  </div>
+  <div class="progress-card" aria-label="Progress">
+    <div class="big-count"><span id="earned-count">0</span><span class="of">/ 55 earned</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+    <p class="progress-note" id="progress-note">Platinum needs all 54 others.</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" id="tab-checklist" class="tab active" data-view="checklist">Checklist</button>
+  <button type="button" id="tab-roadmap" class="tab" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" id="tab-missables" class="tab" data-view="missables">Missables</button>
+</nav>
+
+<section class="controls" id="checklist-controls" aria-label="Checklist controls">
+  <input type="search" id="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind"></div>
+  <label class="ctl">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="ctl check"><input type="checkbox" id="hide-earned"> Hide earned</label>
+  <label class="ctl check spoiler"><input type="checkbox" id="spoiler"> Hide story spoilers</label>
+  <button type="button" id="export">Export progress</button>
+  <label class="ctl import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button type="button" id="reset">Reset</button>
+</section>
+
+<main>
+  <div class="layout">
+    <section id="view-checklist" class="view">
+      <p class="count-line" id="count-line"></p>
+      <ul id="rows" class="rows"></ul>
+      <p class="empty" id="empty" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+    </section>
+    <section id="view-roadmap" class="view" hidden></section>
+    <section id="view-missables" class="view" hidden></section>
+    <aside id="detail" class="detail" aria-label="Trophy guide"></aside>
+  </div>
+</main>
+
+<footer>
+  <h2>Sources &amp; honesty note</h2>
+  <p>Names, descriptions and grades are the official list as PlayStation publishes it, mirrored by <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a>. Every guide on this page is written for this entry, in our own words, from the official descriptions and the cited guides — never copied. The walkthrough facts come from <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx's GTA 6 Trophy Guide &amp; Roadmap</a>, cross-checked against <a href="https://gta-zone.com/news/gta-6-trophies-achievements/">GTA Zone's trophy list</a>. Five trophies are still unconfirmed by every guide we checked (In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin) — their entries say so plainly instead of guessing.</p>
+  <p>Works fully offline: this page loads only its own files and saves your progress in this browser (localStorage). No Rockstar artwork or logo is used; the look is our own. Cheats disable trophies and saving — keep trophy runs cheat-free.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
